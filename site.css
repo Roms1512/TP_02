@@ -113,8 +113,15 @@ section .sct-1-part-1 .services .paragraphes .paragraphe .plus {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
   border: 1px solid rgba(102, 102, 102, 0.842);
+  transition: all 0.3s;
+}
+section .sct-1-part-1 .services .paragraphes .paragraphe .plus:hover {
+  transform: scale(1.06);
+}
+section .sct-1-part-1 .services .paragraphes .paragraphe .plus:active {
+  transition: 0s;
+  transform: scale(1);
 }
 section .sct-1-part-1 .services .paragraphes .paragraphe .plus i {
   color: #ffbe33;
@@ -137,6 +144,7 @@ section .sct-1-part-2 .information {
   align-items: center;
 }
 section .sct-1-part-2 .information .info {
+  cursor: pointer;
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 100px;
@@ -190,6 +198,11 @@ section .sct-1-part-2 .information .info p {
   align-items: flex-start;
   padding-right: 30px;
   margin-top: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-1 .nav-1-part-1 .why .why-1:hover {
+  transform: scale(1.06);
 }
 .nav-1 .nav-1-part-1 .why .why-1 i {
   font-size: 50px;
@@ -251,6 +264,11 @@ section .sct-1-part-2 .information .info p {
 .nav-2 .img-nav-2 img {
   width: 25%;
   height: 320px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-2 .img-nav-2 img:hover {
+  transform: scale(1.06);
 }
 
 footer {

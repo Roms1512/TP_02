@@ -145,8 +145,16 @@ section {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        transition: 0.3s;
                         border: $border;
+                        transition: all 0.3s;
+                        &:hover {
+                            @include effet-hover();
+                        }
+
+                        &:active {
+                            @include effet-active();
+                        }
+
                         i {
                             color: $color-titre;
                             margin-left: 12px;
@@ -173,6 +181,7 @@ section {
             justify-content: center;
             align-items: center;
             .info {
+                cursor: pointer;
                 margin-left: 7%;
                 margin-right: 7%;
                 margin-top: 100px;
@@ -233,6 +242,12 @@ section {
                 align-items: flex-start;
                 padding-right: 30px;
                 margin-top: 0;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    @include effet-hover();
+                }
+
                 i {
                     font-size: 50px;
                     color: $color-titre;
@@ -286,6 +301,7 @@ section {
                 padding: 5px 15px;
                 font-size: 18px;
                 transition: all 0.3s;
+                
                 &:hover {
                     background: $color-titre;
                     @include effet-hover();
@@ -306,6 +322,11 @@ section {
         img {
             width: 25%;
             height: 320px;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                @include effet-hover();
+            }
         }
     }
 }
