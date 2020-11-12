@@ -38,7 +38,7 @@ header {
     position: relative;
     height: 1210px;
     color: $color-text;
-    
+    background: rgba(0, 0, 0, 0.329);
     .img-header {
         width: 100%;
         height: 1210px;
@@ -76,7 +76,15 @@ header {
         z-index: 5;
         background-color: $color-titre;
         color: black;
-        padding: 10px
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+            @include effet-hover();
+        }
+
+        &:active {
+            @include effet-active();
+        }
     }
 
     .slogan {
@@ -91,7 +99,7 @@ header {
 }
 
 
-// -------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // section
@@ -188,7 +196,7 @@ section {
 }
 
 
-// -------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 .nav-1 {
@@ -200,7 +208,8 @@ section {
     background: $background;
     margin: 0 0;
     .nav-1-part-1 {
-        width: 70%;
+        width: 60%;
+
         h3 {
             width: 80%;
             color: $color-titre;
@@ -212,7 +221,7 @@ section {
         }
 
         .why {
-            width: 100%;
+            width: 90%;
             display: flex;
             justify-content: flex-end;
             flex-wrap: wrap;
@@ -228,7 +237,7 @@ section {
                     font-size: 50px;
                     color: $color-titre;
                     margin-right: 48px;
-                    padding-top: 10px;
+                    padding-top: 15px;
                 }
 
                 div {
@@ -251,13 +260,13 @@ section {
     }
 
     img {
-        width: 30%;
+        width: 40%;
         height: 882px;
     }
 }
 
 
-// -------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 .nav-2 {
@@ -302,7 +311,7 @@ section {
 }
 
 
-// -------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 footer {
@@ -325,6 +334,8 @@ footer {
             font-family: $police-texte;
             cursor: pointer;
             .new, .contact {
+                margin-top: 0;
+                padding-top: 0;
                 transition: all 0.3s;
                 &:hover {
                     @include effet-hover();
@@ -338,17 +349,26 @@ footer {
         .description {
             padding-right: 20px;
             h1 {
+                padding-top: 0;
+                margin-top: 0;
                 font-size: 48px;
                 font-family: $police-titre;
                 span {
                     color: $color-titre;
                 }
             }
+
+            p {
+                font-size: 16px;
+            }
         }
 
         .news {
             .new {
                 border-bottom: $border;
+                p {
+                    margin: 10px 0;
+                }
             }
         }
 
@@ -359,6 +379,7 @@ footer {
                     text-align: left;
                 }
                 p {
+                    margin: 10px 0;
                     display: flex;
                     width: 70%;
                     span {

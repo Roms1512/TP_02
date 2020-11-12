@@ -11,6 +11,7 @@ header {
   position: relative;
   height: 1210px;
   color: #FFF;
+  background: rgba(0, 0, 0, 0.329);
 }
 header .img-header {
   width: 100%;
@@ -48,6 +49,14 @@ header .fa-cogs {
   background-color: #ffbe33;
   color: black;
   padding: 10px;
+  cursor: pointer;
+}
+header .fa-cogs:hover {
+  transform: scale(1.06);
+}
+header .fa-cogs:active {
+  transition: 0s;
+  transform: scale(1);
 }
 header .slogan {
   font-family: Ailerons;
@@ -156,7 +165,7 @@ section .sct-1-part-2 .information .info p {
   margin: 0 0;
 }
 .nav-1 .nav-1-part-1 {
-  width: 70%;
+  width: 60%;
 }
 .nav-1 .nav-1-part-1 h3 {
   width: 80%;
@@ -168,7 +177,7 @@ section .sct-1-part-2 .information .info p {
   margin-bottom: 62px;
 }
 .nav-1 .nav-1-part-1 .why {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -186,7 +195,7 @@ section .sct-1-part-2 .information .info p {
   font-size: 50px;
   color: #ffbe33;
   margin-right: 48px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .nav-1 .nav-1-part-1 .why .why-1 div {
   font-family: Roboto;
@@ -202,7 +211,7 @@ section .sct-1-part-2 .information .info p {
   font-size: 12px;
 }
 .nav-1 img {
-  width: 30%;
+  width: 40%;
   height: 882px;
 }
 
@@ -265,6 +274,8 @@ footer .paragraphe-footer .description, footer .paragraphe-footer .news, footer 
   cursor: pointer;
 }
 footer .paragraphe-footer .description .new, footer .paragraphe-footer .description .contact, footer .paragraphe-footer .news .new, footer .paragraphe-footer .news .contact, footer .paragraphe-footer .contacts .new, footer .paragraphe-footer .contacts .contact {
+  margin-top: 0;
+  padding-top: 0;
   transition: all 0.3s;
 }
 footer .paragraphe-footer .description .new:hover, footer .paragraphe-footer .description .contact:hover, footer .paragraphe-footer .news .new:hover, footer .paragraphe-footer .news .contact:hover, footer .paragraphe-footer .contacts .new:hover, footer .paragraphe-footer .contacts .contact:hover {
@@ -278,14 +289,22 @@ footer .paragraphe-footer .description {
   padding-right: 20px;
 }
 footer .paragraphe-footer .description h1 {
+  padding-top: 0;
+  margin-top: 0;
   font-size: 48px;
   font-family: Ailerons;
 }
 footer .paragraphe-footer .description h1 span {
   color: #ffbe33;
 }
+footer .paragraphe-footer .description p {
+  font-size: 16px;
+}
 footer .paragraphe-footer .news .new {
   border-bottom: 1px solid rgba(102, 102, 102, 0.842);
+}
+footer .paragraphe-footer .news .new p {
+  margin: 10px 0;
 }
 footer .paragraphe-footer .contacts .contact {
   border-bottom: 1px solid rgba(102, 102, 102, 0.842);
@@ -294,6 +313,7 @@ footer .paragraphe-footer .contacts .contact :nth-last-child(3) {
   text-align: left;
 }
 footer .paragraphe-footer .contacts .contact p {
+  margin: 10px 0;
   display: flex;
   width: 70%;
 }
