@@ -374,6 +374,9 @@ footer .footer-part-2 div .reseaux ul li {
 footer .footer-part-2 div .reseaux ul li a {
   color: #FFF;
 }
+footer .footer-part-2 div .reseaux ul li a:hover {
+  color: #ffbe33;
+}
 footer .footer-part-2 div .reseaux ul li:hover {
   color: #ffbe33;
   transform: scale(1.06);
@@ -393,6 +396,13 @@ footer .footer-part-2 div .fleche {
 }
 footer .footer-part-2 div .fleche a {
   color: #222222;
+}
+footer .footer-part-2 div .fleche:hover {
+  transform: scale(1.06);
+}
+footer .footer-part-2 div .fleche:active {
+  transition: 0s;
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=site.css.map */

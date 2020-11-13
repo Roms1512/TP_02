@@ -445,7 +445,10 @@ footer {
                         list-style-type: none;
                         cursor: pointer;
                         a {
-                            color: $color-text
+                            color: $color-text;
+                            &:hover {
+                                color: $color-titre;
+                            }
                         }
 
                         &:hover {
@@ -470,6 +473,14 @@ footer {
                 background: $color-titre;
                 a {
                     color: $background;
+                }
+
+                &:hover {
+                    @include effet-hover();
+                }
+
+                &:active {
+                    @include effet-active();
                 }
             }
         }
